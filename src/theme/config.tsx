@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 import { CssBaseline, StyledEngineProvider } from "@mui/material";
-import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const FONT_PRIMARY = ['Inter', 'sans-serif'].join(',');
 
@@ -33,10 +33,20 @@ let theme = createTheme({
       fontWeight: 500,
       textTransform: 'none'
     }
+  },
+  palette: {
+    primary: {
+      light: '#B2C7EF',
+      main: '#568AF0',
+      dark: '#0058FF'
+    },
+    secondary: {
+      light: '#D9E3F5',
+      main: '#F3F3F3',
+      dark: '#E2E2E2'
+    }
   }
 })
-
-theme = responsiveFontSizes(theme);
 
 interface ThemeConfigProps {
   children: ReactNode;

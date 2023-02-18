@@ -6,5 +6,5 @@ body {
 }
 
 body, html {
-  overflow-y: none;
+  overflow-y: hidden;
 }
